@@ -1,11 +1,9 @@
-//---------------  1  -------------------//
-
-
 const mapEl = document.querySelector(".map")
 
+//---------------  1  -------------------//
 
 for (let el of cities) {
-    let newA = document.createElement("a");
+    const newA = document.createElement("a");
     newA.innerText = (`${el.name}`);
     mapEl.appendChild(newA);
     newA.setAttribute("href", `${el.href}`);
@@ -16,3 +14,11 @@ for (let el of cities) {
 }
 
 //---------------  2  -------------------//
+
+const newDiv = document.createElement("div")
+mapEl.appendChild(newDiv)
+newDiv.setAttribute("class", "mapa-tooltip")
+newDiv.setAttribute("style", "left: -9999px; top: -9999px");
+
+
+//---------------  3  -------------------//
