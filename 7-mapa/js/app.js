@@ -1,5 +1,7 @@
+//---------------  1  -------------------//
+
+
 const mapEl = document.querySelector(".map")
-// console.log(mapEl)
 
 
 for (let el of cities) {
@@ -11,7 +13,6 @@ for (let el of cities) {
     newA.setAttribute("data-name", `${el.name}`);
     newA.setAttribute("data-population", `${el.population}`)
     newA.setAttribute("style", `left: ${el.map_x}px; top: ${el.map_y}px`)
-
-    console.log()
-
 }
+
+//---------------  2  -------------------//
